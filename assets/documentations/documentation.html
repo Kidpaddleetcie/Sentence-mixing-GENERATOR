@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+    <title>SMG:Documentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lilita+One');
+        header {
+            font-family: 'Lilita One', cursive;
+            text-align: center;
+            border: blue 5px solid;
+            margin: 0;
+            background: -webkit-linear-gradient(rgb(31, 31, 104), rgb(7, 130, 245));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        h2 {
+            text-align: right;
+            color: blue;
+            border-bottom: blue 2px solid;
+            background: -webkit-linear-gradient(rgb(31, 31, 104), rgb(7, 130, 245));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-right: 20px;
+        }
+        
+        h3 {
+            font-size: 15px;
+            text-align: left;
+            color: blue;
+            background: -webkit-linear-gradient(rgb(31, 104, 31), rgb(15, 245, 7));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-right: 20px;
+        }
+        
+        p {
+            margin: 10px;
+            font-size: 75%;
+            font-size-adjust: initial;
+        }
+        
+        .conditions {
+            background: -webkit-linear-gradient(red, rgb(141, 0, 0));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .column_create {
+            column-count: 2;
+        }
+        
+        textarea {
+            width: 100%;
+            resize: vertical;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Documentation: Sentence-Mixing Generator</h1>
+    </header>
+    <section>
+        <h2>Traitement des phonèmes par conditions</h2>
+        <div class="column_create">
+            <p> b = <b class="conditions">b'</b></p>
+
+            <p> d = <b class="conditions">d'</b></p>
+
+            <p> f =<b class="conditions"> f' et ph'</b></p>
+
+            <p> g = <b class="conditions">g' + voyelle SAUF i et e</b></p>
+
+            <p> k =<b class="conditions"> k' et qu'</b></p>
+
+            <p> l = <b class="conditions">l'</b></p>
+
+            <p> m = <b class="conditions">m'</b></p>
+
+            <p> n =<b class="conditions"> n'</b></p>
+
+            <p> p =<b class="conditions"> p'</b></p>
+
+            <p> r =<b class="conditions"> r'</b></p>
+
+            <p> s =<b class="conditions"> ss'</b></p>
+
+            <p> ch = <b class="conditions">sh' et ch'</b></p>
+
+            <p> t = <b class="conditions">t'</b></p>
+
+            <p> v = <b class="conditions">v' et (w' + voyelle)</b></p>
+
+            <p> z = <b class="conditions">(voyelle + s' + voyelle) et z'</b></p>
+
+            <p> j = <b class="conditions">j' et (g' + i ou e)</b></p>
+
+            <p> ïe = <b class="conditions">(voyelle + y' + voyelle) ou (voyelle + il) ou ïe'</b></p>
+
+            <p> ou = <b class="conditions">(ou') ou (o'+ y) ou w'</b></p>
+
+            <p> u = <b class="conditions">u' et û'</b></p>
+
+            <p> a = <b class="conditions">a'</b></p>
+
+            <p> é = <b class="conditions">(e' + z) ou é ou (er' + espace )</b></p>
+
+            <p> è =<b class="conditions"> è' ou ai' ou (est)</b></p>
+
+            <p> euh = <b class="conditions">(consonne + e' + consonne)</b></p>
+
+            <p> ê = <b class="conditions">(aî') ou ê'</b></p>
+
+            <p> i = <b class="conditions">y' ou î' ou (consonne + i')</b></p>
+
+            <p> oe = <b class="conditions">(oeu') ou (eu')</b></p>
+
+            <p> eu = <b class="conditions">(eu') ou (eû')</b></p>
+
+            <p> o = <b class="conditions">(eau') ou (au') ou ô' ou o' ou (consonne + consonne + u' + consonne)</b></p>
+
+            <p> han = <b class="conditions">(aon') ou (en' + consonne) ou (an' + consonne) ou (em' + p) ou (am' + p)</b></p>
+        </div>
+        <p> hin = <b class="conditions">(in') ou (ein') ou (im' + b) ou (ym') ou (aim') ou (i+en') ou (eim) ou (un) ou (consonne + um') ou (y+en')</b></p>
+
+        <p> hon = <b class="conditions">(on')</b></p>
+
+        <p>Liaison= <b class="conditions">( (les) ou (des) ) ICI' + espace + voyelle</b></p>
+
+        <h2>Structure</h2>
+        <img src="schéma SMG.png" width="50%" alt="schéma/plan du générateur de Sentence-Mixing " title="Schéma Sentence-Mixing Generator " />
+
+        <h2>Tableaux des consonnes,voyelles et phonèmes</h2>
+
+
+        <textarea id="consonnes"></textarea>
+        <textarea id="voyelles"></textarea>
+        <textarea id="phoneme"></textarea>
+
+
+        <script>
+            let consonnes = ["B ", "C ", "D ", "F ", "G ", "H ", "J ", "K ", "L ", "M ", "N ", "P ", "Q ", "R ", "S ", "T ", "V ", "W ", "X ", "Z "];
+            let voyelles = ["A ", "E ", "I ", "O ", "U "];
+            let phonemes = ["b ", "d ", "f ", "g ", "k ", "l ", "m ", "n ", "p ", "r ", "s ", "ch ", "t ", "v ", "z ", "j ", "ïe ", "ou ", "u ", "a ", "é ", "è ", "euh ", "ê ", "i ", "oe ", "eu ", "o ", "han ", "hin ", "hon ", "liaison "]
+            let tableau_consonnes = document.getElementById("consonnes");
+            let tableau_voyelles = document.getElementById("voyelles");
+            let tableau_phonemes = document.getElementById("phoneme");
+
+
+            tableau_consonnes.innerHTML = "[ ";
+
+            for (let i = 0; i < consonnes.length; i++) {
+                if (i < consonnes.length - 1) {
+                    tableau_consonnes.innerHTML += "\" " + consonnes[i].toLowerCase() + "\",";
+                } else {
+                    tableau_consonnes.innerHTML += "\"" + consonnes[i].toLowerCase() + "\"]";
+                }
+            }
+
+            tableau_voyelles.innerHTML = "[ ";
+            for (let i = 0; i < voyelles.length; i++) {
+                if (i < voyelles.length - 1) {
+                    tableau_voyelles.innerHTML += " \" " + voyelles[i].toLowerCase() + "\",";
+                } else {
+                    tableau_voyelles.innerHTML += "\" " + voyelles[i].toLowerCase() + "\"]";
+                }
+            }
+
+            tableau_phonemes.innerHTML = "[ ";
+
+            for (let i = 0; i < phonemes.length; i++) {
+                if (i < phonemes.length - 1) {
+                    tableau_phonemes.innerHTML += "\" " + phonemes[i].toLowerCase() + "\",";
+                } else {
+                    tableau_phonemes.innerHTML += "\"" + phonemes[i].toLowerCase() + "\"]";
+                }
+            }
+
+
+            tableau_consonnes.addEventListener('click', function() {
+                tableau_consonnes.select();
+                document.execCommand('copy');
+                return false;
+            });
+
+            tableau_voyelles.addEventListener('click', function() {
+                tableau_voyelles.select();
+                document.execCommand('copy');
+                return false;
+            });
+
+            tableau_phonemes.addEventListener('click', function() {
+                tableau_phonemes.select();
+                document.execCommand('copy');
+                return false;
+            });
+        </script>
+
+        <h2>Méthodologie</h2>
+        <p>Le générateur fonctionne en deux étapes de conversion: Phonétiquation (le fait convertir le texte en phonétique) et construction de l'audio !</p>
+        <h3>Phonétication</h3>
+        <p>Le générateur fait une conversion en phonème des différentes combinaisons possibles d'une même prononciation !</p>
+        <p>Le principe est simple: une boucle jouant sur la position de la lettre et la vérification du phonème à employé dans des "if" qui compare avec des "&&",des "||", des "===" et des "!=" les différentes lettres (exceptions et admissions sont dans
+            la première section de cette documentation !) </p>
+
+        <h3>Conversion en audio</h3>
+        <p>Dans la phonétication, nous aurons fait un tableau avec les phonèmes utilisés dans l'ordre avec le nom de chaque fichier que nous allons utiliser dans le dossier de la voix ! Le but étant que chaque son puisse se suivent comme dans l'ordre du
+            tableau en respecant leurs positions</p>
+
+        <p class="conditions">ATTENTION: L'emploi de Node est obligatoire pour obtenir un seul fichier audio !</p>
+    </section>
+</body>

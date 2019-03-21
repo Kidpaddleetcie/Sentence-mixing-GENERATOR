@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sentence-Mixing Generator</title>
+    <link rel="stylesheet" href="assets/css/SMG.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sentence-Mixing Generator</h1>
+    </header>
+    <section>
+        <textarea id="TextBox" class="TextBox">Taper votre texte ici !</textarea>
+        <select id="select" class="voix">
+<option value="Roi" select="selected">Roi</option>
+<option value="Link">Link</option>
+<option value="Gwonam">Gwonam</option>
+<option value="Cyprien">6pri1</option>
+    </select>
+
+        <button id="Play" class="Play">C'est Partit !</button>
+        <textarea id="PhoneticZone" class="phonetic">Ici sera affiché le texte en phonétique !</textarea>
+
+        <div id="result">
+
+        </div>
+        <script src="assets/js/SMG.js"></script>
+    </section>
+    <footer>
+        <div class="doc_access"><a href="assets/documentations/documentation.html">Accès à la documentation</a></div>
+    </footer>
+</body>

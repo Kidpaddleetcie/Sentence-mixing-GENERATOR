@@ -1,0 +1,63 @@
+b = b'
+
+d = d'
+
+f = f'
+
+g = g' + voyelle SAUF i et e
+
+k = k' et qu'
+
+l = l'
+
+m = m'
+
+n = n'
+
+p = p'
+
+r = r'
+
+s = ss'
+
+ch = sh' et ch'
+
+t = t'
+
+v = v' et (w' + voyelle)
+
+z = (voyelle + s' + voyelle) et z'
+
+j = j' et (g' + i ou e)
+
+ïe = (voyelle + y' + voyelle) ou (voyelle + il) ou ïe'
+
+ou = ou' ou (o'+y) ou w'
+
+u = u' et û'
+
+a = a'
+
+é = (e' + z) ou é ou (er' + espace )
+
+è = è' ou ai' ou (est)
+
+euh = (consonne + e' + consonne)
+
+ê = (aî) ou ê
+
+i = y' ou î' ou (consonne + i')
+
+oe = (oeu') ou (eu')
+
+eu = (eu') ou (eû')
+
+o = (eau') ou (au') ou ô' ou o' ou (consonne + consonne + u' + consonne)
+
+han = (aon') ou (en' + consonne) ou (an' + consonne) ou (em' + p) ou (am' + p)
+
+hin = (in') ou (ein') ou (im' + b) ou (y' + m ) ou (aim') ou (i+en') ou (eim) ou (un) ou (consonne + um') ou (y+en')
+
+hon = (hon')  
+
+Liaison= ((les) ou (des))+espace+voyelle
