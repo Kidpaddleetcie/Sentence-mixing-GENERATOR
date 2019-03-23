@@ -210,11 +210,22 @@ function phoneticON() {
 
         }
 
+        if (
+            text_array[i] === "m" ||
+            text_array[i - 1] === "o" && text_array[i] === "m" && text_array[i + 1] != "p"
+
+        ) {
+
+            phonetic_zone.innerHTML += "m";
+            phonetic_array.push("m");
+
+        }
+
         //Les voyelles
         if (
             text_array[i] === "e" && text_array[i + 1] === "a" && text_array[i + 2] === "u" ||
             text_array[i] === "a" && text_array[i + 1] === "u" ||
-            text_array[i] === "o" && text_array[i + 1] != "n" ||
+            text_array[i] === "o" && text_array[i + 1] === " " ||
             text_array[i] === "o" && text_array[i + 1] != "u" ||
             text_array[i] === "o" && text_array[i + 1] != "o" ||
             text_array[i] === "o" && text_array[i + 1] != "a" ||
@@ -295,6 +306,15 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += "ï";
             phonetic_array.push("ï");
+
+        }
+        if (
+            text_array[i] === "c" && text_array[i + 1] === "h" ||
+            text_array[i] === "s" && text_array[i + 1] === "h"
+
+        ) {
+            phonetic_zone.innerHTML += "ch";
+            phonetic_array.push("ch");
 
         }
 
