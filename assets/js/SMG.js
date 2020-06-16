@@ -249,6 +249,18 @@ function phoneticON() {
             phonetic_array.push("a");
         }
 
+        if (
+            text_array[i] === "u" &&
+            text_array[i + 1] != "n" ||
+            text_array[i - 1] != "o" &&
+            text_array[i] === "u"
+
+        ) {
+            phonetic_zone.innerHTML += "u";
+            phonetic_array.push("u");
+        }
+
+
 
         if (
             text_array[i] === "i" && text_array[i + 1] != "n" && text_array[i + 1] != "m" ||
