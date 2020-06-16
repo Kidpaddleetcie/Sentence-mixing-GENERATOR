@@ -49,13 +49,10 @@ function phoneticON() {
             text_array[i] === "i" && text_array[i + 1] === "n" ||
             text_array[i] === "i" && text_array[i + 1] === "e" && text_array[i + 2] === "n" ||
             text_array[i] === "i" && text_array[i + 1] === "m" && text_array[i + 2] === "b" ||
-
             text_array[i] === "y" && text_array[i + 1] === "m" ||
             text_array[i] === "y" && text_array[i + 1] === "e" && text_array[i + 2] === "n" ||
-
             text_array[i] === "e" && text_array[i + 1] === "i" && text_array[i + 2] === "n" ||
             text_array[i] === "e" && text_array[i + 1] === "i" && text_array[i + 2] === "m" ||
-
             text_array[i] === "u" && text_array[i + 1] === "n" ||
             text_array[i] === "u" && text_array[i + 1] === "m"
         ) {
@@ -74,19 +71,15 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += " han ";
             phonetic_array.push("han");
-
         }
 
 
         if (
             text_array[i] === "o" && text_array[i + 1] === "m" && text_array[i + 2] === "b" ||
             text_array[i] === "o" && text_array[i + 1] === "n"
-
         ) {
-
             phonetic_zone.innerHTML += "on";
             phonetic_array.push("on");
-
         }
 
 
@@ -105,44 +98,40 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += " z'";
             phonetic_array.push("z");
-
         }
 
 
         if (
             text_array[i] === "g" && text_array[i + 1] === "u" && text_array[i + 1] === "r" ||
-            text_array[i] === "g" && text_array[i + 1] != "e" && text_array[i + 1] != "i") {
+            text_array[i] === "g" && text_array[i + 1] != "e" && text_array[i + 1] != "i"
+        ) {
             phonetic_zone.innerHTML += "g";
             phonetic_array.push("g");
-
         }
 
 
         if (
             text_array[i] === "p" && text_array[i + 1] === "h" ||
-            text_array[i] === "f") {
-
+            text_array[i] === "f"
+        ) {
             phonetic_zone.innerHTML += "f";
             phonetic_array.push("f");
-
         }
 
 
         if (
-            text_array[i] === "p" && text_array[i + 1] != "h") {
-
+            text_array[i] === "p" && text_array[i + 1] != "h"
+        ) {
             phonetic_zone.innerHTML += "p";
             phonetic_array.push("p");
-
         }
 
 
         if (
-            text_array[i] === "r" && text_array[i - 1] != "e") {
-
+            text_array[i] === "r" && text_array[i - 1] != "e"
+        ) {
             phonetic_zone.innerHTML += "r";
             phonetic_array.push("r");
-
         }
 
 
@@ -154,11 +143,10 @@ function phoneticON() {
             text_array[i] === "t" && text_array[i + 1] === "a" ||
             text_array[i] === "t" && text_array[i + 1] === "e" ||
             text_array[i] === "t" && text_array[i + 1] === "è" ||
-            text_array[i] === "t" && text_array[i + 1] === "é") {
-
+            text_array[i] === "t" && text_array[i + 1] === "é"
+        ) {
             phonetic_zone.innerHTML += "t";
             phonetic_array.push("t");
-
         }
 
 
@@ -171,11 +159,9 @@ function phoneticON() {
             text_array[i] === "q" && text_array[i + 1] === "o" ||
             text_array[i] === "q" && text_array[i + 1] === "u" ||
             text_array[i] === "q" && text_array[i + 1] === "i"
-
         ) {
             phonetic_zone.innerHTML += "k";
             phonetic_array.push("k");
-
         }
 
 
@@ -186,39 +172,37 @@ function phoneticON() {
             text_array[i] === "s" && text_array[i + 1] === "s" ||
             text_array[i] === "s" && text_array[i + 1] === "a"
         ) {
-
             phonetic_zone.innerHTML += "s";
             phonetic_array.push("s");
-
         }
 
 
         if (
             text_array[i] === "b"
         ) {
-
             phonetic_zone.innerHTML += "b";
             phonetic_array.push("b");
-
         }
         if (
             text_array[i] === "d"
         ) {
-
             phonetic_zone.innerHTML += "d";
             phonetic_array.push("d");
-
         }
 
         if (
             text_array[i] === "m" ||
             text_array[i - 1] === "o" && text_array[i] === "m" && text_array[i + 1] != "p"
-
         ) {
-
             phonetic_zone.innerHTML += "m";
             phonetic_array.push("m");
+        }
 
+        if (
+            text_array[i] === "j"
+        ) {
+            phonetic_zone.innerHTML += "j";
+            phonetic_array.push("j");
         }
 
         //Les voyelles
@@ -235,17 +219,15 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += "O";
             phonetic_array.push("O");
-
         }
 
 
         if (
             text_array[i] === "e" &&
-            text_array[i + 1] != "l") {
-
+            text_array[i + 1] != "l"
+        ) {
             phonetic_zone.innerHTML += "euh";
             phonetic_array.push("euh");
-
         }
 
 
@@ -254,20 +236,19 @@ function phoneticON() {
             text_array[i + 1] != "i" &&
             text_array[i + 1] != "n" &&
             text_array[i + 1] != "m" &&
-            text_array[i + 1] != "u") {
-
+            text_array[i + 1] != "u"
+        ) {
             phonetic_zone.innerHTML += "a";
             phonetic_array.push("a");
-
         }
 
 
         if (
             text_array[i] === "i" && text_array[i + 1] != "n" && text_array[i + 1] != "m" ||
-            text_array[i] === "y") {
+            text_array[i] === "y"
+        ) {
             phonetic_zone.innerHTML += "i";
             phonetic_array.push("i");
-
         }
 
         if (
@@ -277,14 +258,13 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += "ou";
             phonetic_array.push("ou");
-
         }
 
         if (
-            text_array[i] === "l") {
+            text_array[i] === "l"
+        ) {
             phonetic_zone.innerHTML += "l";
             phonetic_array.push("l");
-
         }
 
         if (
@@ -294,7 +274,6 @@ function phoneticON() {
         ) {
             phonetic_zone.innerHTML += "é";
             phonetic_array.push("é");
-
         }
 
 
@@ -302,29 +281,16 @@ function phoneticON() {
             text_array[i] === "ï" ||
             text_array[i - 1] === "a" && text_array[i] === "y" && text_array[i + 1] === "e" ||
             text_array[i - 1] === "a" && text_array[i] === "i" && text_array[i + 1] === "l"
-
         ) {
             phonetic_zone.innerHTML += "ï";
             phonetic_array.push("ï");
-
         }
         if (
             text_array[i] === "c" && text_array[i + 1] === "h" ||
             text_array[i] === "s" && text_array[i + 1] === "h"
-
         ) {
             phonetic_zone.innerHTML += "ch";
             phonetic_array.push("ch");
-
-        }
-
-        if (
-            text_array[i] === "j"
-        ) {
-
-            phonetic_zone.innerHTML += "j";
-            phonetic_array.push("j");
-
         }
 
 
@@ -332,10 +298,8 @@ function phoneticON() {
         if (
             text_array[i] === " "
         ) {
-
             phonetic_zone.innerHTML += " ";
             phonetic_array.push(" ");
-
         }
     }
     console.log("Le tableau phonétique corresspond à: " + phonetic_array);
