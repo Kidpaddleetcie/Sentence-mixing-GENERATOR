@@ -230,8 +230,7 @@ function phoneticON() {
 
 
         if (
-            text_array[i] === "e" &&
-            text_array[i + 1] != "l"
+            text_array[i] === "e" && text_array[i + 1] != "l"
         ) {
             phonetic_zone.innerHTML += "euh";
             phonetic_array.push("euh");
@@ -239,22 +238,15 @@ function phoneticON() {
 
 
         if (
-            text_array[i] === "a" &&
-            text_array[i + 1] != "i" &&
-            text_array[i + 1] != "n" &&
-            text_array[i + 1] != "m" &&
-            text_array[i + 1] != "u"
+            text_array[i] === "a" && text_array[i + 1] != "i" && text_array[i + 1] != "n" && text_array[i + 1] != "m" && text_array[i + 1] != "u"
         ) {
             phonetic_zone.innerHTML += "a";
             phonetic_array.push("a");
         }
 
         if (
-            text_array[i] === "u" &&
-            text_array[i + 1] != "n" ||
-            text_array[i - 1] != "o" &&
-            text_array[i] === "u"
-
+            text_array[i] === "u" && text_array[i + 1] != "n" ||
+            text_array[i - 1] != "o" && text_array[i] === "u"
         ) {
             phonetic_zone.innerHTML += "u";
             phonetic_array.push("u");
