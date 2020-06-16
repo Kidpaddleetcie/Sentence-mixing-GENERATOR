@@ -12,6 +12,11 @@ phonetic_zone.addEventListener('click', function() {
     return false;
 });
 
+onkeypress = function(e) {
+    if (e.charCode == 13) {
+        alert('touche espace!');
+    }
+}
 
 let select = document.getElementById("select");
 let valeurs;
