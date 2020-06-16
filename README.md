@@ -3,8 +3,9 @@
 
 
 ## Structure
+![La structure][structure]
 
-![La structure](assets\documentations\schéma SMG.png "La structure")
+[logo]: assets\documentations\schéma_SMG.png "La structure"
 
 ## Traitement des phonèmes par conditions
 
