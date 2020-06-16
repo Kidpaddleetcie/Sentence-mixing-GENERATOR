@@ -318,6 +318,15 @@ function phoneticON() {
 
         }
 
+        if (
+            text_array[i] === "j"
+        ) {
+
+            phonetic_zone.innerHTML += "j";
+            phonetic_array.push("j");
+
+        }
+
 
         // Espace
         if (
