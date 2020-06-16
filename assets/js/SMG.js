@@ -217,7 +217,9 @@ function phoneticON() {
             text_array[i] === "e" && text_array[i + 1] === "a" && text_array[i + 2] === "u" ||
             text_array[i] === "a" && text_array[i + 1] === "u" ||
             text_array[i] === "o" && text_array[i + 1] === " " ||
+            text_array[i] === "o" && text_array[i + 1] === "nn" ||
             text_array[i] === "o" && text_array[i + 1] != "u" ||
+            text_array[i] === "o" && text_array[i + 1] != "n" ||
             text_array[i] === "o" && text_array[i + 1] != "o" ||
             text_array[i] === "o" && text_array[i + 1] != "a" ||
             text_array[i] === "o" && text_array[i + 1] != "i" ||
