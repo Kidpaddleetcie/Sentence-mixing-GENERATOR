@@ -2,6 +2,10 @@
 
 
 
+## Structure
+
+![La structure](assets\documentations\schéma SMG.png)
+
 ## Traitement des phonèmes par conditions
 
 | **Consonnes**     |     **Voyelles**    |   **Phonétiques** |
@@ -38,10 +42,6 @@
 | -       |     -      |         hin |
 | -       |     -      |         hon |
 | -       |     -      |         liaison |
-
-
-## Structure
-
 
 
 ## Méthodologie
