@@ -4,11 +4,40 @@
 
 ## Traitement des phonèmes par conditions
 
-*Consonnes*: ["B ", "C ", "D ", "F ", "G ", "H ", "J ", "K ", "L ", "M ", "N ", "P ", "Q ", "R ", "S ", "T ", "V ", "W ", "X ", "Z "];
-
-*Voyelles*:["A ", "E ", "I ", "O ", "U "];
-
-*Phonétiques*:["b ", "d ", "f ", "g ", "k ", "l ", "m ", "n ", "p ", "r ", "s ", "ch ", "t ", "v ", "z ", "j ", "ïe ", "ou ", "u ", "a ", "é ", "è ", "euh ", "ê ", "i ", "oe ", "eu ", "o ", "han ", "hin ", "hon ", "liaison "];
+| **Consonnes**     |     **Voyelles**    |   **Phonétiques** |
+| :------------ | :-------------: | -------------: |
+| B      |     A     |        b |
+| C    |   E    |      d |
+| D       |     I      |         f |
+| F      |     O      |         g |
+| G       |     U      |         k |
+| H       |     -      |         l |
+| J       |     -      |         m |
+| K       |     -      |         n |
+| L       |     -      |         p |
+| M       |     -      |         r |
+| N       |     -      |         s |
+| P       |     -      |         ch |
+| Q       |     -      |         t |
+| R       |     -      |         v |
+| S       |     -      |         z |
+| T       |     -      |         j |
+| V       |     -      |         ïe |
+| W       |     -      |         ou |
+| X       |     -      |         u |
+| Z       |     -      |         a |
+| -       |     -      |         é |
+| -       |     -      |         è |
+| -       |     -      |         euh |
+| -       |     -      |         ê |
+| -       |     -      |         i |
+| -       |     -      |         oe |
+| -       |     -      |         eu |
+| -       |     -      |         o |
+| -       |     -      |         han |
+| -       |     -      |         hin |
+| -       |     -      |         hon |
+| -       |     -      |         liaison |
 
 
 ## Structure
