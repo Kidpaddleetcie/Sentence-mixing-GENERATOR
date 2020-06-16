@@ -12,10 +12,12 @@ phonetic_zone.addEventListener('click', function() {
     return false;
 });
 
-onkeypress = function(e) {
-    if (e.charCode == 13) {
-        alert('touche espace!');
+function touche(event) {
+    let x = event.which || event.keyCode;
+    if (x === 13) {
+        phoneticON()
     }
+
 }
 
 let select = document.getElementById("select");
