@@ -4,7 +4,7 @@
 
 ## Structure
 
-![La structure](assets\documentations\schéma SMG.png)
+![La structure]("assets\documentations\schéma SMG.png")
 
 ## Traitement des phonèmes par conditions
 
